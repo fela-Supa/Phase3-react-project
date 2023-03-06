@@ -4,7 +4,6 @@ import img from '../assets/Pair_programming.png';
 
 const Home = ({ user, setUser }) => {
   const startBtn = user ? '/projects' : '/login'
-  const [message, setMessage] = useState('');
 
   return (
     <div className='home-container'>
