@@ -1,17 +1,10 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import img from '../assets/Pair_programming.png';
-import axios from 'axios';
 
 const Home = ({ user, setUser }) => {
   const startBtn = user ? '/projects' : '/login'
   const [message, setMessage] = useState('');
-
-  useEffect(() => {
-    axios.get('/api/hello')
-      .then(res => setMessage(res.data.message))
-      .catch(err => console.log(err));
-  }, []);
 
   return (
     <div className='home-container'>
