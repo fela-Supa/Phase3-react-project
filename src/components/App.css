@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.header {
+  width: 100%;
+  height: 10vh;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+button {
+  transition: all 0.35s ease-in-out;
+}
+header {
+  align-items: center;
+  margin: 0 auto;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  height: inherit;
+  color: #1d3e68;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: 600;
+}
+nav > a,
+nav > button {
+  margin-left: 1.5rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #1d3e68;
+}
+nav > a:hover {
+  color: darkgrey;
+}
+
+nav > button {
+  background-color: #1d3e68;
+  padding: 6px 12px;
+  border: 1px solid #1d3e68;
+  border-radius: 10px;
+}
+nav > button:hover {
+  background-color: transparent;
+}
+nav > button > a {
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid red; */
+}
+nav > button > a:hover {
+  color: #1d3e68;
+}
+.loginFormContainer {
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.loginForm {
+  padding: 4rem 3rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  width: 30%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.loginForm > h1 {
+  text-align: center;
+  padding-bottom: 1rem;
+  color: #1d3e68;
+}
+.loginForm > label {
+  padding-top: 1rem;
+}
+.loginForm > label > span {
+  color: red;
+}
+.loginForm > input {
+  padding: 4px 6px;
+  border-radius: 6px;
+  border: 1px solid black;
+}
+.loginForm > button {
+  background-color: #1d3e68;
+  color: white;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #1d3e68;
+}
+.loginForm > button:hover {
+  background-color: darkgrey;
+  background-color: transparent;
+  cursor: pointer;
+  color: #1d3e68;
+}
+.loginForm > p,
+.loginForm > p > a {
+  text-align: center;
+  text-decoration: none;
+}
+.loginForm > p > a {
+  color: #1d3e68;
+}
+/* ==== HOME ===== */
+.home-container {
+  width: 85%;
+  display: flex;
+  margin: 0 auto;
+  height: 90vh;
+  justify-content: space-between;
+  align-items: center;
+}
+.home-text {
+  width: 45%;
+}
+.home-text > h1 {
+  font-size: 3.2rem;
+  color: #1d3e68;
+}
+.home-text > a > button {
+  background-color: #1d3e68;
+  border: 1px solid #1d3e68;
+  padding: 6px 16px;
+  font-size: 1.05rem;
+  border-radius: 10px;
+  color: white;
+}
+.home-text > a > button:hover {
+  background-color: transparent;
+  color: #1d3e68;
+  cursor: pointer;
+}
+.home-text > p {
+  font-size: 1.2rem;
+  padding: 1.3rem 0;
+}
+.home-img {
+  width: 45%;
+}
+.home-img > img {
+  width: 100%;
+}
+/* ==== HOME ====== */
+/* ==== PROJECTS ==== */
+.projects-container {
+  width: 85%;
+  margin: 7vh auto;
+}
+.projects-container h1 {
+  padding-bottom: 1rem;
+  color: #1d3e68;
+}
+.project {
+  display: flex;
+  height: 6rem auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 2rem 0;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.35s ease-in-out;
+  text-decoration: none;
+  color: black;
+}
+.project > .project-icons {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+}
+.project > .project-icons > i {
+  font-size: 1.5rem;
+}
+.project > .project-icons > i:hover {
+  cursor: pointer;
+}
+.project > .project-icons > i:first-child {
+  color: #1d3e68;
+}
+.project > .project-icons > i:nth-child(2) {
+  color: #ff0000c3;
+}
+.project > section > details > p {
+  padding-right: 2rem;
+}
+.project > summary {
+  transition: all 0.35s ease-in-out;
+}
+/* ==== PROJECTS ==== */
+/* ==== ADD PROJECT ==== */
+.add-project-container {
+  width: 85%;
+  margin: 7vh auto;
+  display: flex;
+  justify-content: space-between;
+}
+.add-project-container h1 {
+  padding-bottom: 1rem;
+  color: #1d3e68;
+}
+.project-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  max-width: 500px;
+}
+.project-form > label {
+  padding: 1.1rem 0 0.3rem;
+  font-size: 1.1rem;
+}
+.project-form > input,
+textarea {
+  font-size: 1rem;
+  padding: 4px 8px;
+  border-radius: 6px;
+  border: 1px solid black;
+}
+.project-form > button {
+  background-color: #1d3e68;
+  border: 1px solid #1d3e68;
+  padding: 6px 16px;
+  font-size: 1.05rem;
+  border-radius: 8px;
+  color: white;
+  width: fit-content;
+}
+.project-form > button:hover {
+  background-color: transparent;
+  color: #1d3e68;
+  cursor: pointer;
+}
+.add-project-img {
+  width: 40%;
+}
+.add-project-img > img {
+  width: 100%;
+}
+/* ==== ADD PROJECT ==== */
+/* ==== PROJECT MEMBERS ===== */
+.project-members-container {
+  width: 85%;
+  margin: 6vh auto;
+}
+.project-members-container h1,
+.project-members-container h2 {
+  color: #1d3e68;
+}
+/* ==== PROJECT MEMBERS ===== */
